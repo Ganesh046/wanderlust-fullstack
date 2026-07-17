@@ -183,4 +183,5 @@ Screenshots will be added soon.
 
 **Ganesh Majagi**
 
-GitHub: https://github.com/Ganesh046
+- GitHub: [Ganesh046](https://github.com/Ganesh046)
+- LinkedIn: [Ganesh Majagi](https://www.linkedin.com/in/ganesh-majagi-342091315)
