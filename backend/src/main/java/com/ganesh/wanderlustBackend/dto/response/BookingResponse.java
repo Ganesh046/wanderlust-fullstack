@@ -1,0 +1,26 @@
+package com.ganesh.wanderlustBackend.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class BookingResponse {
+
+    private Long id;
+
+    private Long listingId;
+
+    private Long guestId;
+
+    private LocalDate checkIn;
+
+    private LocalDate checkOut;
+
+    private Double totalPrice;
+
+}

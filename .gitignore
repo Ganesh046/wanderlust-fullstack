@@ -1,0 +1,63 @@
+# ==========================================
+# Frontend (React / Vite)
+# ==========================================
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.env
+frontend/*.local
+frontend/logs/
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+
+# ==========================================
+# Backend (Spring Boot / Maven)
+# ==========================================
+backend/target/
+backend/.env
+backend/*.log
+backend/logs/
+
+# Maven Wrapper
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# STS
+backend/.apt_generated
+backend/.classpath
+backend/.factorypath
+backend/.project
+backend/.settings
+backend/.springBeans
+backend/.sts4-cache
+
+# NetBeans
+backend/nbproject/private/
+backend/nbbuild/
+backend/dist/
+backend/nbdist/
+backend/.nb-gradle/
+backend/build/
+
+# ==========================================
+# IDEs
+# ==========================================
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# ==========================================
+# Operating System
+# ==========================================
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# AI Editors
+# ==========================================
+.gemini/

@@ -1,0 +1,208 @@
+/* Navbar.css */
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  gap: 16px;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  letter-spacing: -0.8px;
+}
+
+.nav-logo-icon {
+  transition: transform 0.5s ease;
+}
+
+.nav-logo-text {
+  font-family: var(--font-sans);
+  color: var(--color-primary);
+}
+
+/* Search Bar (Airbnb-Style Rounded Pill) */
+.nav-search-bar {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid var(--border-color-dark);
+  border-radius: var(--radius-pill);
+  padding: 6px 8px 6px 20px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+}
+
+.nav-search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-main);
+  width: 100%;
+}
+
+.nav-search-button {
+  background: var(--color-primary);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Action Menu */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-explore-link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.nav-host-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  gap: 4px;
+}
+
+.nav-profile-menu-container {
+  position: relative;
+}
+
+.nav-profile-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 14px;
+  background: #ffffff;
+  border: 1px solid var(--border-color-dark);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-profile-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+/* Dropdown Menu */
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  padding: 8px 0;
+  min-width: 220px;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.15s ease-out;
+}
+
+.nav-dropdown-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 4px;
+}
+
+.nav-dropdown-username {
+  font-weight: 700;
+  color: var(--text-main);
+  font-size: 0.9rem;
+}
+
+.nav-dropdown-email {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.nav-dropdown-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-dropdown-divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 4px 0;
+}
+
+.nav-dropdown-logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ff4136;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+/* Auth Buttons */
+.nav-auth-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-login-link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 8px 12px;
+}
+
+.nav-signup-btn {
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+}
