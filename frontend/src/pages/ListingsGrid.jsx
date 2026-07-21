@@ -12,7 +12,7 @@ import {
   Mountain,
   Castle,
   Snowflake,
-  Palmtree
+  Palmtree,
 } from "lucide-react";
 import toast from "react-hot-toast";
 
@@ -26,7 +26,7 @@ const CATEGORIES = [
   { id: "CAMPING", label: "Camping", icon: Tent },
   { id: "FARMS", label: "Farms", icon: Sprout },
   { id: "ARCTIC", label: "Arctic", icon: Snowflake },
-  { id: "BEACHES", label: "Beaches", icon: Palmtree }
+  { id: "BEACHES", label: "Beaches", icon: Palmtree },
 ];
 
 const ListingsGrid = ({ searchKeyword }) => {
@@ -166,7 +166,6 @@ const ListingsGrid = ({ searchKeyword }) => {
                         gap: "3px",
                         fontSize: "0.85rem",
                         fontWeight: 600,
-                        marginRight: "14px",
                       }}
                     >
                       <span style={{ color: "#ffb000" }}>★</span>

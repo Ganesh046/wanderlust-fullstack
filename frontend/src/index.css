@@ -189,28 +189,33 @@ select {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   column-gap: 24px;
-  row-gap: 40px;
+  row-gap: 28px;
 }
 
 .listing-card {
-  background: transparent;
+  background: var(--bg-primary);
   display: flex;
   flex-direction: column;
   cursor: pointer;
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
-  transition: var(--transition-smooth);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.listing-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
 }
 
 .listing-img-container {
   width: 100%;
-  aspect-ratio: 20/19;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   position: relative;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
 
 .listing-img-container::after {
@@ -261,6 +266,7 @@ select {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  padding: 14px 16px 16px;
 }
 
 .listing-title-row {
